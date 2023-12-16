@@ -1,0 +1,93 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+body {
+  background-image: url(https://images.pexels.com/photos/2759303/pexels-photo-2759303.jpeg);
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  backdrop-filter: blur(8px);
+  font-weight: 300;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  background-color: aliceblue;
+  padding: 1rem;
+  border-radius: 0.7rem;
+  box-shadow: 2px 7px 7px rgba(96, 25, 93, 0.4);
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1.5px solid rgba(96, 25, 93, 0.4);
+  padding-bottom: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+h5{
+  font-size: 1.3rem;
+  color: rgb(159, 152, 152);
+}
+.close-button {
+  border: none;
+  background-color: transparent;
+  padding: 0;
+  cursor: pointer;
+}
+.text-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.icon-box {
+  margin-bottom: 0.5rem ;
+}
+.question {
+  color: rgba(96, 25, 93);
+  font-weight: 500;
+  max-width: 70%;
+  text-align: center;
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+}
+.follow-up {
+  color: gray;
+  max-width: 95%;
+  text-align: center;
+  margin-bottom: 0.5rem;
+}
+.button-section {
+  display: flex;
+  justify-content: center;
+  gap: 1rem; 
+  margin-top: 0.5rem;
+}
+.ok-button, .Cancel-button {
+  width: 7rem;
+  height: 3rem;
+  font-size: 1.2rem;
+  cursor: pointer;
+  border: none;
+  border-radius: 0.5rem;
+  transition: transform 0.3s, background-color 0.3s;
+}
+.ok-button {
+  color: white;
+  background-color: rgba(96, 25, 93);
+}
+.Cancel-button {
+  color: rgba(96, 25, 93);
+  background-color: rgb(208, 221, 225);
+}
+.ok-button:hover,.Cancel-button:hover {
+  transform: scale(1.1);
+  background-color:#8d75ce;
+}
+.Cancel-button:hover {
+  color: white;
+}
