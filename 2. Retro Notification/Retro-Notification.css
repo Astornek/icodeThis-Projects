@@ -1,0 +1,136 @@
+* {
+    box-sizing: border-box;
+}
+:root {
+    --blue: #1DA1F2;
+    --yellow: #FFA500;
+    --background-clr: #bfd8e7;
+    --white: rgb(237, 214, 214);
+    --gray: #555555;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: var(--background-clr);
+    color: var(--gray);
+    font-family: 'Poppins', sans-serif;
+}
+.container {
+    display: flex;
+    max-width: 25rem;
+    width: 100%;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.button-area {
+    display: flex;
+    gap: 1rem;
+    max-width: 25rem;
+    width: 100%;
+    justify-content: flex-end;
+}
+.message-button,.notification-button {
+    width: 5.5rem;
+    height: 5.5rem;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+}
+.message-button {
+    fill: var(--blue);
+    background-color: var(--white);
+}
+.notification-div {
+        position: relative;
+}
+.nr {
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    color: green;
+    background-color: var(--white);
+    border-radius: 10px;
+    padding: 1.5px 10px;
+}
+.notification-button {
+    fill: var(--white);
+    background-color: var(--blue);
+}
+.hidden {
+    display: none;
+}
+.content-container {
+  background-color: var(--white);
+  box-shadow: 0 0 7px rgba(22, 94, 139, 0.8);
+  border-radius: 0.5rem;
+  padding: 1rem;
+  margin-top: 1rem;
+  display: none;
+  max-width: 25rem;
+  width: 100%;
+}
+.content-container {
+    display: none;
+    flex-direction: column;
+}
+.left,.right{
+    align-items: center;
+    display: flex;
+    gap: 1rem;
+}
+.row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-height: 2rem;
+    cursor: pointer;
+    transition: color 0.3s, transform 0.3s, padding 0.3s, border-radius 0.3s;
+}
+.row:hover {
+    background-color: rgba(104, 229, 238, 0.7) ;
+    transform: scale(1.06);
+    padding: 0.5rem;
+    border-radius: 15px;
+}
+.number {
+    border: 2px solid #FFA500;
+    padding: 1.5px 10px;
+    text-align: center;
+    width: 40px;
+    border-radius: 10px;
+    font-size: 0.8rem;
+}
+.comment-icon, .add-icon,.favorite-icon,.visitors-icon {
+    fill: var(--blue);
+}
+header{
+    color: var(--blue);
+    justify-content: center;
+    display: flex;
+    margin-bottom: 2rem;
+    font-size: 1.1rem;
+}
+.row {
+    margin-bottom: .5rem;
+}
+.name {
+    font-size: 1.1rem;
+}
+.profile {
+    margin-top: 1rem;
+    align-items: center;
+}
+.profile-pic {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.friends {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
