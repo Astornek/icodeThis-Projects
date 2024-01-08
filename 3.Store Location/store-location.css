@@ -1,0 +1,148 @@
+* {
+    box-sizing: border-box;
+}
+:root {
+--back-clr: rgb(30, 16, 46);
+--main-clr:rgb(29, 3, 70) ;
+--secondary-clr: rgb(89, 39, 180);
+--text-clr: rgb(207, 193, 193);
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: var(--back-clr);
+    font-family: 'Poppins', sans-serif;
+    color: var(--text-clr) ;
+    padding: 0;
+    margin: 0;
+}
+.container {
+    background-color: var(--main-clr);
+    max-width: 22rem;
+    width: 100%;
+    border-radius: 10px;
+    padding: 2rem 1.5rem;
+    position: relative;
+}
+header{
+    font-size: 1.1rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+}
+.location {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+}
+.input-div {
+    display: flex;
+    flex-direction: column;
+    font-size: 0.8rem;
+}
+.postal{
+    margin: 0;
+    
+}
+.input-code {
+    background-color: transparent;
+    border: 2px solid var(--secondary-clr) ;
+    padding: .3rem;
+    max-width: 8rem;
+    outline: none;
+    color: var(--text-clr);
+}
+.use-location {
+    color: var(--secondary-clr);
+    display: flex;
+    align-items: center;
+    gap: .6rem;
+    margin-block-start: .9rem;
+    transition:transform 0.3s, ;
+    cursor: pointer;
+}
+.use-location svg {
+    fill: var(--secondary-clr);
+    height: 1.2em;
+}
+.use-location:hover {
+    transform: scale(1.01);
+}
+.adresses {
+    display: flex;
+    flex-direction: column;
+    font-size: 0.9rem;
+}
+.adresses * {
+    margin: 0;
+}
+.name{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1px ;
+}
+.main * {
+    margin-bottom: 3px;
+}
+.shop-name {
+    font-weight: 700;
+}
+.access {
+    font-size: 0.7rem;
+    font-weight: 700;
+    background-color: rgb(158, 19, 105);
+    padding: 2px 3px;
+    border-radius: 10px;
+    margin-bottom: 3px;
+}
+.adress{
+    margin-bottom: 4px;
+}
+.shedule {
+    display: flex;
+    gap: .5rem;
+    align-items: center;
+
+}
+.shedule svg {
+    fill:var(--text-clr) ;
+    height: 1.2em;
+}
+.access-open{
+    font-size: 0.7rem;
+    font-weight: 700;
+    background-color: rgb(25, 211, 25);
+    padding: 2px 3px;
+    border-radius: 10px;
+    margin-bottom: 3px;
+}
+.view-button {
+    margin-top: 1rem;
+    width: 100%;
+    padding: .5rem;
+    border: none;
+    border-radius:5px;
+    font-weight: 700;
+    color: var(--text-clr);
+    background-color: var(--secondary-clr);
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+.view-button:hover {
+    transform: scale(0.96);
+}
+.container::after {
+    content: "";
+    position: absolute;
+    bottom: 38%;
+    right: 20%; 
+    width: 20rem;
+    height:18rem;
+    border-radius: 0 30px 30px 30px;
+    background-color: rgb(158, 19, 105); 
+    z-index: -1;
+}
