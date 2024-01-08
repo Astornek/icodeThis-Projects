@@ -1,0 +1,91 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+:root {
+    --primary-clr: rgb(33, 13, 82);
+    --secondary-clr: rgb(55, 26, 126);
+    --tres-clr: rgb(26, 10, 65);
+    --text-clr:#F0F0F0;
+    --hover-clr: rgb(97, 17, 104);
+}
+body {
+    background-color: var(--primary-clr);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    font-family: 'Open Sans', sans-serif;
+    color: var(--text-clr);
+}
+.container {
+    display: flex;
+    font-weight: 500;
+    gap: 1rem;
+}
+.package{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    padding: 2rem 1.5rem;
+    border: 6px solid var(--secondary-clr);
+    border-radius: 15px;
+    background-color: var(--tres-clr);
+    transition: all 0.5s;
+}
+.package:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+    border:6px solid var(--hover-clr) ;
+}
+.package:hover .purchase-button{
+    background-color: var(--hover-clr);
+    transition: background-color 0.5s;
+}
+h1{
+    font-size: .9rem;
+    margin-bottom: 1rem;
+}
+h2{
+    font-size: 2.2rem;
+}
+.gb {
+    font-size: 2.5rem;
+}
+h3{
+    font-size: .9rem;
+    margin-bottom: 1rem;
+}
+.purchase-button {
+    border: 2px solid var(--hover-clr);
+    padding: .7rem 2.5rem;
+    background-color: transparent;
+    color: var(--text-clr);
+    border-radius: 10px;
+    font-weight: bold;
+    margin-bottom: 2rem;
+}
+.line {
+    height: 1px;
+    width: 100%;
+    background-color: rgb(240, 240, 240, 0.5);
+    margin-bottom: 1.5rem;
+}
+.points {
+    margin-bottom: .4rem;
+}
+.points svg {
+    fill: var(--text-clr);
+}
+.points span {
+   margin-right: 7px;
+}
+@media (max-width: 850px) {
+    .container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
